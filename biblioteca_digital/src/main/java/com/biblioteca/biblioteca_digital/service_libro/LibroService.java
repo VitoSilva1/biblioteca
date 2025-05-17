@@ -2,7 +2,6 @@ package com.biblioteca.biblioteca_digital.service_libro;
 
 import com.biblioteca.biblioteca_digital.libroModel.Libro;
 import com.biblioteca.biblioteca_digital.repository_libro.LibroRepository;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

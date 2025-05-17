@@ -31,6 +31,17 @@ public class LibroController {
     }
 
     @PostMapping("/crear")
+    /**
+     * Utiliza este curl para probar el endpoint de crear libro
+     * 
+     * curl --location 'http://localhost:8080/ap1/v1/biblioteca-digital/crear' \
+        --header 'Content-Type: application/json' \
+        --data '{
+            "nombre":"test",
+            "editorial":"test"
+        }'
+     * 
+     */
     public ResponseEntity<?> agregar(@RequestBody Libro libro){
         try {
             Libro libroNuevo = libroService.save(libro);
