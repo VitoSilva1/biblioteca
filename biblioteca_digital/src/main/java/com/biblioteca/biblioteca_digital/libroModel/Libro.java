@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 
 import java.util.Date;
 
@@ -19,8 +21,6 @@ public class Libro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(unique=true, length = 20, nullable = false)
-    private String run;
 
     @Column(nullable = false)
     private String nombre;
@@ -28,7 +28,6 @@ public class Libro {
     @Column(nullable = false)
     private String editorial;
 
-    @Column(nullable = false)
-    private Date año;
+
 
 }
